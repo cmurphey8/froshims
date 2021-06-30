@@ -1,0 +1,28 @@
+{% extends "layout.html" %}
+
+<style>
+    .table
+    {
+        text-align:center;
+    }
+</style>
+{% block body %}
+    <h3>Congratulations, NAME you've registered for SPORT!</h3>
+    <h1>Counts</h1>
+    <table>
+        <thead>
+            <tr>
+                <th style="text-align:left">Sport</th>
+                <th>Registrant Count</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for sport in sports %}
+                <tr>
+                    <td>TODO</td>
+                    <td style="text-align:center">TODO</td>
+                </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+{% endblock %}
